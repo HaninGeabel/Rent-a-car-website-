@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rental.css">
+    <script src="index1.js"></script>
+    <title>Document</title>
+</head>
+<body onload="adddata() ,current_date_function(); return false;">
+    
+        <header class="header" >
+            
+            <div class="pic"></div><br>
+            <h1>  Make your booking </h1>
+    
+    </header>
+    
+    <div class="wrapper">
+       
+        <div class="firstDiv"> <form id="search" >
+          
+        Last Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text" id="clientname" maxlength="25" size="20" required onkeyup="setSearchVisible();return false;"><br><br>
+        
+<select id="searchvalue" multiple disabled onclick="setFormToEdit(this.value);return false;"></select>
+        
+    </form><br><br>
+    <table id="carRental" >
+       
+        <tr><td>First Name</td><td><input type="text" id="firstname" disabled></td><td>Last Name </td><td><input type="text" id="lastname" disabled></td></tr>
+       
+        <tr><td>Address </td><td><input type="text" id="address" disabled></td><td>Email </td><td><input type="text" id="email" disabled></td></tr>
+        
+        <tr><td>State</td><td><input type="text" id="prov" disabled></td><td>Phone </td><td><input type="text" id="phone" disabled></td></tr>
+       
+    </table><br>
+    Choose the vehicle&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <select id="rentVehicle" disabled onchange="pictures();return false;">
+            
+            <option selected="selected" value="15">compact $15/day</option> 
+            <option value="20">Mid-size	$20/day</option>
+            <option value="35">Luxury  $35/day </option>
+            <option value="40">Van/Truck	$40/day </option>
+        </select><br><br>
+        Options<ol id="options">
+             
+            <li ><input type="checkbox" name="option"  id="option1" value="5" disabled>Roof Rack or Bicycle Rack  $5/day</li>
+            <li ><input type="checkbox" name="option" id="option2" value="10" disabled>GPS extra $10</li>
+            <li ><input type="checkbox" name="option" id="option3" value="0" disabled>Child Seat free </li>
+            
+        </ol><br>
+        Days<input type="number" id="quantity"  min="1" max="30" disabled required><br><br>
+
+        <table class="buttons">
+        <tr><td>
+            <form action="index.html">
+                <input type="submit" value="Go back" id="pre" >
+            </form></td><td>
+            <form id="submit">
+        <input type ="submit" value="Submit" id="fvbutton" disabled  onClick="calculation();return false;">
+        
+    </form></td></tr>
+    
+        </table>
+    </div>
+        <div id="carPic"></div>
+        
+    </div>
+    <div id="result"></div>
+     
+    <footer>
+        <div class= "footer">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;WWW.Dodgy Brakes Car Rental.ca&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            123 Franklin Rd Brighton BN2 3AE, UK &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        Phone: 876-874-9999  &ensp;&ensp;&ensp;&ensp;&ensp;  <span id="current_Date" >current Date</span> </div>
+      
+    </footer>
+</body>
+</html>

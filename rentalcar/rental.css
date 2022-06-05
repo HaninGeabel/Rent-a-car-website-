@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header .pic{
+    background-image: url("pic/pic.png");
+    background-repeat: no-repeat;
+	height:100px;
+	width: 200px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 260px; */
+    
+    
+	
+}
+
+/* https://unsplash.com/photos/zu95jkyrGtw */
+body{
+    background-image: url("pic/car.jpg");
+    background-size: auto;
+    background-position: center center;  
+	/* background-color: rgba(255,255,255,0.3); */
+	background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    height: 100vh;
+    
+}
+header{
+    width: 100%;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+	display: block;
+	background: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    height: 50px;
+}
+footer{
+    width: 100%;
+    position: fixed;
+            padding: 10px 0px 0px 0px;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.7);
+            align-items: center;
+            margin: auto;
+            /* margin-left:  240px; */
+            height: 40px;
+            display: block;
+}
+.link{
+width: 200px;
+background: rgba(255, 255, 255, 0.7);
+height: 50px;
+align-items: center;
+text-align: center;
+margin: auto;
+margin-top: 200px;
+display: flex;
+justify-content: center;
+}
+
+
+ #searchvalue {
+   width :500px;
+   text-align: center;
+    
+
+   
+} 
+
+ .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    margin: 0;
+    padding-left: 200px;
+    background: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    height: 600px;
+    width: 75%;
+    margin-top: 50px;
+    /* width: 400px; */
+   
+} 
+#carPic{
+    /* truck https://unsplash.com/photos/crHhZlES310 */
+    /* mid https://unsplash.com/photos/y-Av2X7fKmI */
+    /* compact https://unsplash.com/photos/p7tai9P7H-s */
+    /* loxury https://unsplash.com/photos/a2Qs_LkM8-8 */
+    background-image: url("pic/compact.jpg");
+    /* background-size: cover;
+    height: 600px;
+    width: 600px;
+    object-fit: fill; */
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    background-size: cover;
+    object-fit: cover;
+    object-position: bottom right;
+    margin-top: 80px;
+    margin-left: -400px;
+       
+    }
+    .firstDiv{
+       padding-left: 10px;
+    }
+    #search{
+        margin-left: -180px;
+        margin-top: 80px;
+    }
+     #carRental{
+        margin-left: -180px;
+        
+    }
+    #rentVehicle,#options{
+        margin-left: -160px;
+        width: 400px;
+    }
+    #options{
+        margin-left: -20px;
+        width: 400px;
+    }
+    #submit{
+        /* margin-left: -180px; */
+        width: 400px;
+    }
+    #fvbutton{
+        width: 200px;
+    }
+   #result{
+    width: 150px; 
+    text-align: center;
+    margin: 0;
+    font-size: medium;
+    background: rgba(255, 255, 255, 0.7);
+    width: 75%;
+    margin: 0;
+    padding-left: 200px;
+    padding-top: 50px;
+    margin: auto;
+    height: 900px;
+
+   
+   }
+   #final{
+    margin-left:-90px;
+    margin-right: auto;
+    padding-top: 1000px ; 
+    width: 1000px;
+    align-items: center;
+    border-collapse: collapse;
+  
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.29);
+}
+
+#carPic{
+    width:550px ;
+    height: 400px;
+    margin: 0;
+    margin-top: 80px;
+}
+#pre{
+    margin-right: 10px;
+    margin-left: -90px;
+    width: 200px;
+}
+.buttons td{
+    
+    border-width: 3px 2px; 
+}
+
